@@ -19,6 +19,10 @@ class Todo:
         return f"{self.code_id} - {self.title}"
 
 
+class TodoBook:
+
+
+
 
 
 
