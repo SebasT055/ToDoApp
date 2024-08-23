@@ -9,5 +9,6 @@ class Todo:
         self.tags: list[str] = []
 
     def mark_completed(self):
+        self.completed = True
 
 
