@@ -24,6 +24,9 @@ class TodoBook:
     def __init__(self):
         self.todos = {}
 
+    def add_todo(self, title: str, description: str) -> int:
+
+
 
 
 
