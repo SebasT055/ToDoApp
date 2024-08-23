@@ -21,6 +21,9 @@ class Todo:
 
 class TodoBook:
 
+    def __init__(self):
+        self.todos = {}
+
 
 
 
