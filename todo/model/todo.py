@@ -31,10 +31,10 @@ class TodoBook:
         self.todos[new_id] = obj_todo
         return new_id
 
-
-
     def pending_todos(self):
         return [todo for todo in self.todos.values() if not todo.completed]
+
+    def completed_todos(self):
 
 
 
