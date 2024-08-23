@@ -11,6 +11,6 @@ class Todo:
     def mark_completed(self):
         self.completed = True
 
-    def add_tag(self):
+    def add_tag(self, tag: str):
 
 
