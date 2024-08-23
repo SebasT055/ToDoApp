@@ -35,6 +35,7 @@ class TodoBook:
         return [todo for todo in self.todos.values() if not todo.completed]
 
     def completed_todos(self):
+        return []
 
 
 
