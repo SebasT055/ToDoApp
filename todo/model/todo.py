@@ -34,6 +34,7 @@ class TodoBook:
 
 
     def pending_todos(self):
+        return [todo for todo in self.todos.values() if not todo.completed]
 
 
 
