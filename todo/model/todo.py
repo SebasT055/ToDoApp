@@ -27,6 +27,9 @@ class TodoBook:
 
     def add_todo(self, title: str, description: str) -> int:
         new_id = len(self.todos) + 1
+        obj_todo = Todo(title, description)
+        self.todos[new_id] = obj_todo
+        return new_id
 
 
 
