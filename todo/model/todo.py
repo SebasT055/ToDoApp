@@ -27,10 +27,10 @@ class TodoBook:
         self.todos: dict[int, Todo] = {}
 
     def add_todo(self, title: str, description: str) -> int:
-        new_id = len(self.todos) + 1
-        obj_todo = Todo(title, description)
-        self.todos[new_id] = obj_todo
-        return new_id
+        id = len(self.todos) + 1
+        obj_todo = Todo(id, title, description)
+        self.todos[id] = obj_todo
+        return id
 
     def pending_todos(self):
         return [todo for todo in self.todos.values() if not todo.completed]
@@ -47,8 +47,6 @@ class TodoBook:
                 else:
                     tag_count[tag] = 1
         return tag_count
-
-
 
 
 
